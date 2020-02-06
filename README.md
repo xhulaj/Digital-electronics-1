@@ -1,4 +1,4 @@
 # Digital electronics
 ## List of works
-week|label
-1|A/N
+###week|label
+###1|A/N
