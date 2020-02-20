@@ -1,0 +1,2 @@
+vhdl work "../03-segment/hex_to_segment_hp.vhd"
+vhdl work "top.vhd"
