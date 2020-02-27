@@ -1,0 +1,2 @@
+vhdtdtfi -lib work top.vhd -prj binary_adder -o top.spl -module top -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr top.spl /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.sym 

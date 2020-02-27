@@ -1,0 +1,22 @@
+V3 12
+FL /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/full_adder.vhd 2020/02/27.09:52:04 P.20131013
+EN work/full_adder 1582793643 \
+      FL /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/full_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/full_adder/Behavioral 1582793644 \
+      FL /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/full_adder.vhd \
+      EN work/full_adder 1582793643 CP work/half_adder
+FL /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/half_adder.vhd 2020/02/27.08:43:02 P.20131013
+EN work/half_adder 1582793641 \
+      FL /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/half_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/half_adder/Behavioral 1582793642 \
+      FL /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/half_adder.vhd \
+      EN work/half_adder 1582793641
+FL /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd 2020/02/27.09:52:04 P.20131013
+EN work/top 0 \
+      FL /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/top/Behavioral 0 \
+      FL /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd \
+      EN work/top 0 CP work/full_adder CP work/hex_to_7seg

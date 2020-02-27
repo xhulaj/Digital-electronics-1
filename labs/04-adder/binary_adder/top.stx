@@ -1,0 +1,61 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" in Library work.
+ERROR:HDLParsers:1402 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 44. Object SW0_CPLD of mode IN can not be updated.
+ERROR:HDLParsers:1402 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 45. Object SW1_CPLD of mode IN can not be updated.
+ERROR:HDLParsers:1402 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 46. Object SW2_CPLD of mode IN can not be updated.
+ERROR:HDLParsers:1402 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 47. Object SW3_CPLD of mode IN can not be updated.
+ERROR:HDLParsers:3313 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 48. Undefined symbol 'SW4_CPLD'.  Should it be: SW9_CPLD, SW8_CPLD, SW3_CPLD, SW2_CPLD, SW1_CPLD or SW0_CPLD?
+ERROR:HDLParsers:3313 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 49. Undefined symbol 'SW5_CPLD'.  Should it be: SW9_CPLD, SW8_CPLD, SW3_CPLD, SW2_CPLD, SW1_CPLD or SW0_CPLD?
+ERROR:HDLParsers:3313 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 50. Undefined symbol 'SW6_CPLD'.  Should it be: SW9_CPLD, SW8_CPLD, SW3_CPLD, SW2_CPLD, SW1_CPLD or SW0_CPLD?
+ERROR:HDLParsers:3313 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 51. Undefined symbol 'SW7_CPLD'.  Should it be: SW9_CPLD, SW8_CPLD, SW3_CPLD, SW2_CPLD, SW1_CPLD or SW0_CPLD?
+ERROR:HDLParsers:164 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 59. parse error, unexpected SEMICOLON, expecting COMMA or CLOSEPAR
+ERROR:HDLParsers:3312 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 60. Undefined symbol 'b_i'.
+ERROR:HDLParsers:1209 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 60. b_i: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 61. Undefined symbol 'carry_i'.
+ERROR:HDLParsers:1209 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 61. carry_i: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 62. Undefined symbol 'sum_o'.
+ERROR:HDLParsers:1209 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 62. sum_o: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 63. Undefined symbol 'carry_o'.
+ERROR:HDLParsers:1209 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 63. carry_o: Undefined symbol (last report in this block)
+ERROR:HDLParsers:164 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 68. parse error, unexpected SEMICOLON, expecting COMMA or CLOSEPAR
+ERROR:HDLParsers:164 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 77. parse error, unexpected SEMICOLON, expecting COMMA or CLOSEPAR
+ERROR:HDLParsers:164 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 86. parse error, unexpected SEMICOLON, expecting COMMA or CLOSEPAR
+ERROR:HDLParsers:709 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 96. hex_to_7seg is not an entity name
+ERROR:HDLParsers:3312 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 106. Undefined symbol 'LD2'.
+ERROR:HDLParsers:1209 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 106. LD2: Undefined symbol (last report in this block)
+ERROR:HDLParsers:164 - "/home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd" Line 106. parse error, unexpected ROW, expecting OPENPAR or TICK or LSQBRACK
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+
+
+Total memory usage is 474472 kilobytes
+
+Number of errors   :   24 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
