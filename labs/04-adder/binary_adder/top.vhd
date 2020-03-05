@@ -26,7 +26,8 @@ port (
     SW10_CPLD :  in  std_logic;
     SW11_CPLD :  in  std_logic;
     disp_seg_o : out std_logic_vector(7-1 downto 0);
-    disp_dig_o : out std_logic_vector(4-1 downto 0)
+    disp_dig_o : out std_logic_vector(4-1 downto 0);
+	 LD2 : out std_logic
 );
 end entity top;
 
@@ -45,10 +46,10 @@ begin
     s_dataA(1) <= SW1_CPLD ;
     s_dataA(2) <= SW2_CPLD;
     s_dataA(3) <= SW3_CPLD ;
-	 SW4_CPLD <= s_dataB(0);
-	 SW5_CPLD <= s_dataB(1);	 
-	 SW6_CPLD <= s_dataB(2);
-	 SW7_CPLD <= s_dataB(3);
+	 s_dataB(0) <= SW8_CPLD ;
+	 s_dataB(1) <= SW9_CPLD ;	 
+	 s_dataB(2) <= SW10_CPLD ;
+	 s_dataB(3) <= SW11_CPLD ;
 	
 
 
@@ -57,37 +58,37 @@ begin
     -- Sub-blocks of four full_adders
     FULL_ADDER_0 : entity work.full_adder
     port map (
-       a_i => s_dataA(0);
-		 b_i => s_dataB(0);
-		 carry_i => '0';
-		 sum_o => s_result(0);
+       a_i => s_dataA(0),
+		 b_i => s_dataB(0),
+		 carry_i => '0',
+		 sum_o => s_result(0),
 		 carry_o => s_carry0
     );
 
     FULL_ADDER_1 : entity work.full_adder
     port map (
-       a_i => s_dataA(1);
-		 b_i => s_dataB(1);
-		 carry_i => s_carry0;
-		 sum_o => s_result(1);
+       a_i => s_dataA(1),
+		 b_i => s_dataB(1),
+		 carry_i => s_carry0,
+		 sum_o => s_result(1),
 		 carry_o => s_carry1
     );
 
     FULL_ADDER_2 : entity work.full_adder
     port map (
-       a_i => s_dataA(2);
-		 b_i => s_dataB(2);
-		 carry_i => s_carry1;
-		 sum_o => s_result(2);
+       a_i => s_dataA(2),
+		 b_i => s_dataB(2),
+		 carry_i => s_carry1,
+		 sum_o => s_result(2),
 		 carry_o => s_carry2
     );
 
     FULL_ADDER_3 : entity work.full_adder
     port map (
-       a_i => s_dataA(3);
-		 b_i => s_dataB(3);
-		 carry_i => s_carry2;
-		 sum_o => s_result(3);
+       a_i => s_dataA(3),
+		 b_i => s_dataB(3),
+		 carry_i => s_carry2,
+		 sum_o => s_result(3),
 		 carry_o => s_carryOut
     );
 
@@ -96,7 +97,8 @@ begin
     -- Sub-block of hex_to_7seg entity
     HEX2SSEG : entity work.hex_to_7seg
     port map (
-       hex_i => s_result
+       hex_i => s_result,
+		 seg_o => disp_seg_o
     );
 
     -- Select display position
@@ -104,7 +106,7 @@ begin
 
 
     -- Show carry output bit on Coolrunner-II LED
-    LD2 => s_carryOut;
+    LD2 <= s_carryOut;
 
     -- Show two 4-bit inputs on CPLD expansion LEDs
 	 

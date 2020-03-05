@@ -1,5 +1,8 @@
-EN half_adder NULL /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/half_adder.vhd sub00/vhpl01 1582793641
-EN top NULL /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/top.vhd sub00/vhpl04 1582793687
-EN full_adder NULL /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/full_adder.vhd sub00/vhpl00 1582793643
-AR full_adder behavioral /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/full_adder.vhd sub00/vhpl03 1582793644
-AR half_adder behavioral /home/lab661/Documents/xhulaj/Digital-electronics-1/04-adder/binary_adder/half_adder.vhd sub00/vhpl02 1582793642
+EN hex_to_7seg NULL /home/lab661/Documents/xhulaj/Digital-electronics-1/labs/03-segment/hex_to_segment_hp.vhd sub00/vhpl05 1583391765
+EN half_adder NULL /home/lab661/Documents/xhulaj/Digital-electronics-1/labs/04-adder/binary_adder/half_adder.vhd sub00/vhpl01 1583391761
+EN top NULL /home/lab661/Documents/xhulaj/Digital-electronics-1/labs/04-adder/binary_adder/top.vhd sub00/vhpl04 1583391767
+EN full_adder NULL /home/lab661/Documents/xhulaj/Digital-electronics-1/labs/04-adder/binary_adder/full_adder.vhd sub00/vhpl00 1583391763
+AR hex_to_7seg behavioral /home/lab661/Documents/xhulaj/Digital-electronics-1/labs/03-segment/hex_to_segment_hp.vhd sub00/vhpl06 1583391766
+AR full_adder behavioral /home/lab661/Documents/xhulaj/Digital-electronics-1/labs/04-adder/binary_adder/full_adder.vhd sub00/vhpl03 1583391764
+AR half_adder behavioral /home/lab661/Documents/xhulaj/Digital-electronics-1/labs/04-adder/binary_adder/half_adder.vhd sub00/vhpl02 1583391762
+AR top behavioral /home/lab661/Documents/xhulaj/Digital-electronics-1/labs/04-adder/binary_adder/top.vhd sub00/vhpl07 1583391768
