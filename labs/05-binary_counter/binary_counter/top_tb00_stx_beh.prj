@@ -1,0 +1,5 @@
+vhdl isim_temp "clock_enable.vhd"
+vhdl isim_temp "binary_cnt.vhd"
+vhdl isim_temp "../../03-segment/hex_to_segment_hp.vhd"
+vhdl isim_temp "top.vhd"
+vhdl isim_temp "top_tb00.vhd"

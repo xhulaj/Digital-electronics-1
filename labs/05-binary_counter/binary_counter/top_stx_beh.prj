@@ -1,0 +1,3 @@
+vhdl isim_temp "clock_enable.vhd"
+vhdl isim_temp "binary_cnt.vhd"
+vhdl isim_temp "top.vhd"

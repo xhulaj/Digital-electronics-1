@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/lab661/Documents/xhulaj/Digital-electronics-1/labs/05-binary_counter/binary_counter/top_tb00_isim_beh.exe" -prj "/home/lab661/Documents/xhulaj/Digital-electronics-1/labs/05-binary_counter/binary_counter/top_tb00_beh.prj" "top_tb00" 

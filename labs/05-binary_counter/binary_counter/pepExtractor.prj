@@ -1,0 +1,4 @@
+work	"../../03-segment/hex_to_segment_hp.vhd"
+work	"binary_cnt.vhd"
+work	"clock_enable.vhd"
+work	"top.vhd"
