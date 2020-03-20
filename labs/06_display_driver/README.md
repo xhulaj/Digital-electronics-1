@@ -1,5 +1,15 @@
-content
 
+## 1 Preparation tasks 
+
+1. Complete the signal timing to display `03.14` value. 
+
+    &nbsp;
+    ![segment_timing](https://github.com/xhulaj00/Digital-electronics-1/Images/wavedrom.png)
+    &nbsp;
+
+The figure source code is as follows:
+>
+```javascript
 {signal: [
   ['Digit position',
     {name: 'disp_dig_o(3)', wave: 'xx01..01..xx', },
@@ -9,13 +19,13 @@ content
   ],
   ['Seven-segment data',
     {name: 'disp_seg_o',       wave: 'xx33335555xx', data: ['0','3','1','4','0','3','1','4'], },  
-    {name: 'A: disp_seg_o(6)', wave: 'xx0.1.0.1.x.', },
-    {name: 'B: disp_seg_o(5)', wave: 'xx0.......xx', },
-    {name: 'C: disp_seg_o(4)', wave: 'xx0.......xx', },
-    {name: 'D: disp_seg_o(3)', wave: 'xx0.1.0.1.xx', },
-    {name: 'E: disp_seg_o(2)', wave: 'xx01..01..xx', },
-    {name: 'F: disp_seg_o(1)', wave: 'xx01.0.1.0xx', },
-    {name: 'G: disp_seg_o(0)', wave: 'xx10101010xx', },
+    {name: 'A: disp_seg_o(6)', wave: 'xx0.1.0.1.xx', },
+    {name: 'B: disp_seg_o(5)', wave: 'xx0.......xx',          },
+    {name: 'C: disp_seg_o(4)', wave: 'xx0.......xx',          },
+    {name: 'D: disp_seg_o(3)', wave: 'xx0.1.0.1.xx',          },
+    {name: 'E: disp_seg_o(2)', wave: 'xx01..01..xx',          },
+    {name: 'F: disp_seg_o(1)', wave: 'xx01.0.1.0xx',          },
+    {name: 'G: disp_seg_o(0)', wave: 'xx10101010xx',          },
   ],
   {name: 'Decimal point', wave: 'xx101..01.xx', },
 ],
@@ -23,3 +33,4 @@ content
     text: '4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms',
   },
 }
+```
