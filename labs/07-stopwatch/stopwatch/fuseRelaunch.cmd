@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/Documents/07-stopwatch/stopwatch/testbench_isim_beh.exe" -prj "/home/ise/Documents/07-stopwatch/stopwatch/testbench_beh.prj" "work.testbench" 
