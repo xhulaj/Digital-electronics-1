@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/Documents/06-display_driver/display_driver/driver_7seg_tb00_isim_beh.exe" -prj "/home/ise/Documents/06-display_driver/display_driver/driver_7seg_tb00_beh.prj" "work.driver_7seg_tb00" 
