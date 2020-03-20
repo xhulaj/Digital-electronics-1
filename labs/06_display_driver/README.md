@@ -32,3 +32,7 @@ The figure source code is as follows:
   },
 }
 ```
+3. Screenshot of the simulation:
+&nbsp;
+ ![segment_timing](https://github.com/xhulaj/Digital-electronics-1/blob/master/Images/display_driver.png)
+&nbsp;
