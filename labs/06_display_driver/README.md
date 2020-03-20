@@ -3,7 +3,7 @@
 
 1. Complete the signal timing to display `03.14` value. 
 &nbsp;
-Images/wavedrom.png
+ ![segment_timing](https://github.com/xhulaj/Digital-electronics-1/blob/master/Images/wavedrom.png)
 &nbsp;
 The figure source code is as follows:
 >
