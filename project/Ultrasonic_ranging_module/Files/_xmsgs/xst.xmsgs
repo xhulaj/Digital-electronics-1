@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLParsers" num="1015" delta="new" >&quot;<arg fmt="%s" index="1">D:/ﾊkola/Skripta/2. ro￨n￭k/Letn￭/Digit￡ln￭ Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd</arg>&quot; Line <arg fmt="%d" index="2">75</arg>. Wait for statement unsupported.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1015" delta="new" >&quot;<arg fmt="%s" index="1">D:/ﾊkola/Skripta/2. ro￨n￭k/Letn￭/Digit￡ln￭ Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd</arg>&quot; Line <arg fmt="%d" index="2">77</arg>. Wait for statement unsupported.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1015" delta="new" >&quot;<arg fmt="%s" index="1">D:/ﾊkola/Skripta/2. ro￨n￭k/Letn￭/Digit￡ln￭ Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd</arg>&quot; Line <arg fmt="%d" index="2">85</arg>. Wait for statement unsupported.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1015" delta="new" >&quot;<arg fmt="%s" index="1">D:/ﾊkola/Skripta/2. ro￨n￭k/Letn￭/Digit￡ln￭ Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd</arg>&quot; Line <arg fmt="%d" index="2">87</arg>. Wait for statement unsupported.
+</msg>
+
+</messages>
+

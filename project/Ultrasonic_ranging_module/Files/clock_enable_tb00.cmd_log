@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Xilinx ISE projects/Ultrasonic_range_detector/clock_enable_tb00.xst" -ofn "D:/Xilinx ISE projects/Ultrasonic_range_detector/clock_enable_tb00.syr" 

@@ -1,0 +1,94 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: clock_enable_tb00.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "clock_enable_tb00.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "clock_enable_tb00"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : clock_enable_tb00
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/ kola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable.vhd" in Library work.
+Entity <clock_enable> compiled.
+Entity <clock_enable> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/ kola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd" in Library work.
+Entity <clock_enable_tb00> compiled.
+ERROR:HDLParsers:1015 - "D:/ kola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd" Line 75. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "D:/ kola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd" Line 77. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "D:/ kola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd" Line 85. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "D:/ kola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd" Line 87. Wait for statement unsupported.
+--> 
+
+Total memory usage is 4503220 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

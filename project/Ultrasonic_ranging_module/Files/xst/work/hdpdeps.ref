@@ -1,0 +1,14 @@
+V3 7
+FL "D:/Škola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable.vhd" 2020/04/16.11:42:18 P.20131013
+EN work/clock_enable 1587044406 \
+      FL "D:/Škola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/clock_enable/Behavioral 1587044407 \
+      FL "D:/Škola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable.vhd" \
+      EN work/clock_enable 1587044406
+EN work/clock_enable_tb00 0 \
+      FL "D:/Škola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/clock_enable_tb00/behavior 0 \
+      FL "D:/Škola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd" \
+      EN work/clock_enable_tb00 0 CP clock_enable
