@@ -23,53 +23,75 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity HC_SR04_driver is
-generic(
 
-);
 port(
 			srst_n_i : in  STD_LOGIC; -- synchronous reset
-			start_stop : in std_logic;  -- active low, for initiating measuring process
 			clk_i : in std_logic;  -- 1 MHz
-			echo  : in std_logic;
-			data0_o : out std_logic_vector(4-1 downto 0);
-			data1_o : out std_logic_vector(4-1 downto 0);
-			data2_o : out std_logic_vector(4-1 downto 0);
-			data3_o : out std_logic_vector(4-1 downto 0);
-			dp_o    : out std_logic_vector(4-1 downto 0);
-			trigg_o : out std_logic := '0'
+			echo_i  : in std_logic;  -- reading time between sent and deflected signal
+			echo_time : out std_logic_vector(12-1 downto 0); -- time in us
+			trigg_o : out std_logic := '0' -- 10us signal 
 	 );
 end HC_SR04_driver;
 
 ------------------------------------------------------------------------------------------------
 
 architecture Behavioral of HC_SR04_driver is
-signal status : std_logic := '0';  -- states whether measuring is turned on or off
+	
+	type t_state is (trigg, pending, echo);
+	signal s_state : t_state;
+	signal s_cnt : unsigned (15-1 downto 0);
+	signal s_time :unsigned (15-1 downto 0);
+	constant trigtime : unsigned(4-1 downto 0) := "1010";
+	
 begin
 
-	p_ctrl_unit : process(clk_i, srst_n_i)
-		begin 
-			if rising_edge(clk_i) then
-				if srst_n_i = '1' then
-						status = '0';
-				elsif start_stop = '0' then
-					status = not(status);
+measurement : process(clk_i)
+	
+	begin
+		
+		if rising_edge(clk_i) then
+			if srst_n_i = '0' then
+				s_cnt <= (others => '0');
+				s_state <= trigg;
+			else
+				case s_state is 
+					
+					when trigg =>
+					
+						if s_cnt < trigtime then
+								trigg_o <= '1';
+								s_cnt <= s_cnt + 1;
+						else
+								trigg_o <= '0';
+								s_cnt <= (others => '0');
+								s_state <= pending;
+						end if;
+					
+					when echo =>
+					
+						if echo_i = '1' then
+								s_cnt <= s_cnt +1;
+						else
+								s_state <= pending;
+								s_time <= s_cnt;
+						end if;
+						
+					when pending =>
+					
+						if s_cnt > '0' then
+								s_state <= trigg;
+								s_cnt <= (others => '0');
+						elsif (s_cnt = '0' and echo_i = '1') then
+								s_state <= echo;
+						else
+								s_state <= pending;
+						end if;
+					end case;
 				end if;
 			end if;
-		end process p_ctrl_unit;
-	
-	p_sensor_trigg : process(clk_i)
-		begin 
-			if rising_edge(clk_i) then
-				if status = '1' then
-					trigg_o = '1'
-					
-				
-	
-	measuring : process(clk_i)
-			variable meas_time : std_logic_vector(6-1 downto 0) := ( others => '0'); -- time of signal echo in microseconds
-		begin	
-	
-
-
+		end process measurement;
+		
+		echo_time <= s_time;
+		
 end Behavioral;
 
