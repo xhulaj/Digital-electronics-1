@@ -33,5 +33,27 @@
 >Our objective is to measure time of output from the module, convert it to distance and display it on the 4-digit 7-segment display.
 
 ## Results
+### HC-SR04_driver
+
+Driver for HC-SR04 module has three inputs: 
+
+* 10 Mhz clock input 
+* synchronous reset
+* echo - signal timing modules output
+
+and two outputs:
+
+* trigg_o for triggering the module
+* echo_time - binary time of echo signal in us, divided by two
+
+This driver works as a Finite State Machine (FSM) with three states, described in following diagram.
+
+<img src="Images/HC_SR04_driver_state_diagram.png" alt="Scheme" height="250"/> 
+
+The output time in form of a logic vector is already divided by two. This was accomplished by simply dividing by integer of 2. 
+Other way to do this would be by shifting right by one bit, which was not necessary.
+On the following picture is a screenshot of its simulation, particulary the moment between two measurements.
+
+<img src="Images/HC_SR40_driver_tb00_simulation.png" alt="Scheme" height="300"/> 
 
 ## References

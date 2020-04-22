@@ -8,16 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Xilinx ISE projects/Ultrasonic_range_detector/HC_SR04_driver.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Xilinx ISE projects/Ultrasonic_range_detector/clock_enable.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Xilinx ISE projects/Ultrasonic_range_detector/driver_7seg.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Xilinx ISE projects/Ultrasonic_range_detector/hex_to_7seg.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Xilinx ISE projects/Ultrasonic_range_detector/HC_SR04_driver_tb00.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
