@@ -28,7 +28,7 @@ port(
 			srst_n_i : in  STD_LOGIC; -- synchronous reset
 			clk_i : in std_logic;  -- 1 MHz
 			echo_i  : in std_logic;  -- reading time between sent and deflected signal
-			echo_time : out std_logic_vector(15-1 downto 0); -- time in us
+			distance : out std_logic_vector(14-1 downto 0); -- time in us
 			trigg_o : out std_logic := '0' -- 10us signal 
 	 );
 end HC_SR04_driver;
@@ -43,6 +43,8 @@ architecture Behavioral of HC_SR04_driver is
 	signal s_time :unsigned (15-1 downto 0);
 	--signal s_time_divided : unsigned (12-1 downto 0);
 	constant trigtime : unsigned(4-1 downto 0) := "1010";
+	constant sound_speed : unsigned( 18-1 downto 0) := "101011111001110111";
+	signal dist_mm : unsigned (33-1 downto 0);
 	
 begin
 
@@ -100,7 +102,8 @@ measurement : process(clk_i)
 --				end if;
 --		end process division;
 		
-		echo_time <= std_logic_vector(s_time /2);
+		dist_mm <= sound_speed *(s_time /2);
+		distance <= std_logic_vector(dist_mm(31 downto 18));
 		
 end Behavioral;
 

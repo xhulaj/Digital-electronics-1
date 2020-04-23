@@ -31,29 +31,35 @@
 ## Code-description
 
 >Our objective is to measure time of output from the module, convert it to distance and display it on the 4-digit 7-segment display.
-
-## Results
-### HC-SR04_driver
-
-Driver for HC-SR04 module has three inputs: 
+###Driver for HC-SR04 module 
+Three inputs: 
 
 * 10 Mhz clock input 
 * synchronous reset
 * echo - signal timing modules output
 
-and two outputs:
+Two outputs:
 
 * trigg_o for triggering the module
-* echo_time - binary time of echo signal in us, divided by two
+* distance - distance in mm in binary after division
 
 This driver works as a Finite State Machine (FSM) with three states, described in following diagram.
 
 <img src="Images/HC_SR04_driver_state_diagram.png" alt="Scheme" height="250"/> 
 
-The output time in form of a logic vector is already divided by two. This was accomplished by simply dividing by integer of 2. 
-Other way to do this would be by shifting right by one bit, which was not necessary.
-On the following picture is a screenshot of its simulation, particulary the moment between two measurements.
+During measurement process a variable s_time is filled with according value, which is then transformed into distance in a combinational section.
+
+## Results
+### HC-SR04_driver
+
+
+On the following pictures is a screenshot of simulation of HC-SR04_driver and screenshot of the moment between two measurements.
 
 <img src="Images/HC_SR40_driver_tb00_simulation.png" alt="Scheme" height="300"/> 
+<img src="Images/HC_SR40_driver_tb00_simulation_close.png" alt="Scheme" height="300"/> 
 
 ## References
+> [*Type conversion article*](https://www.bitweenie.com/listings/vhdl-type-conversion/)
+> Following sites were used a lot to get much appreciated information
+> *[*All about FPGA*](https://allaboutfpga.com)
+> *[*Stack overflow*](https://stackoverflow.com)

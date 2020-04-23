@@ -1,0 +1,31 @@
+Command line:
+   HC_SR04_driver_tb01_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50156
+
+Thu Apr 23 10:25:02 2020
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5492.13 Meg
+
+ Total Signals          : 14
+ Total Nets             : 81
+ Total Signal Drivers   : 9
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 5
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 587
+In process HC_SR04_driver.vhd:105 
+ Target Size 32 and source size 33 for array dimension 0 does not match. 
+
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5492.13 Meg
+
+Thu Apr 23 10:25:51 2020
+

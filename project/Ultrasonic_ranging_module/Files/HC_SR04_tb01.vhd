@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   11:59:04 04/22/2020
+-- Create Date:   10:32:51 04/23/2020
 -- Design Name:   
--- Module Name:   D:/Xilinx ISE projects/Ultrasonic_range_detector/HC_SR04_driver_tb00.vhd
+-- Module Name:   D:/Xilinx ISE projects/Ultrasonic_range_detector/HC_SR04_tb01.vhd
 -- Project Name:  Ultrasonic_range_detector
 -- Target Device:  
 -- Tool versions:  
@@ -32,10 +32,10 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY HC_SR04_driver_tb00 IS
-END HC_SR04_driver_tb00;
+ENTITY HC_SR04_tb01 IS
+END HC_SR04_tb01;
  
-ARCHITECTURE behavior OF HC_SR04_driver_tb00 IS 
+ARCHITECTURE behavior OF HC_SR04_tb01 IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
@@ -44,7 +44,7 @@ ARCHITECTURE behavior OF HC_SR04_driver_tb00 IS
          srst_n_i : IN  std_logic;
          clk_i : IN  std_logic;
          echo_i : IN  std_logic;
-         distance : OUT  std_logic_vector(14 downto 0);
+         distance : OUT  std_logic_vector(13 downto 0);
          trigg_o : OUT  std_logic
         );
     END COMPONENT;
@@ -56,11 +56,11 @@ ARCHITECTURE behavior OF HC_SR04_driver_tb00 IS
    signal echo_i : std_logic := '0';
 
  	--Outputs
-   signal echo_time : std_logic_vector(14 downto 0);
+   signal distance : std_logic_vector(13 downto 0);
    signal trigg_o : std_logic;
 
    -- Clock period definitions
-   constant clk_i_period : time := 1 us;
+   constant clk_i_period : time := 10 ns;
  
 BEGIN
  
@@ -69,7 +69,7 @@ BEGIN
           srst_n_i => srst_n_i,
           clk_i => clk_i,
           echo_i => echo_i,
-          echo_time => echo_time,
+          distance => distance,
           trigg_o => trigg_o
         );
 
@@ -87,7 +87,7 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 10 us;	
+    wait for 10 us;	
 
       srst_n_i <= '0';
 		
@@ -118,6 +118,30 @@ BEGIN
 		echo_i <= '1';
 		
 		wait for 2460 us;
+		
+		echo_i <= '0';
+		
+		wait for 20 us;
+		
+		echo_i <= '1';
+		
+		wait for 3416 us;
+		
+		echo_i <= '0';
+		
+		wait for 20 us;
+		
+		echo_i <= '1';
+		
+		wait for 7642 us;
+		
+		echo_i <= '0';
+		
+		wait for 20 us;
+		
+		echo_i <= '1';
+		
+		wait for 6452 us;
 		
 		echo_i <= '0';
 		
