@@ -167,6 +167,12 @@ On the following pictures is a screenshot of simulation of HC-SR04_driver and sc
 <img src="Images/HC_SR40_driver_tb00_simulation.png" alt="Scheme" height="300"/> 
 <img src="Images/HC_SR40_driver_tb00_simulation_close.png" alt="Scheme" height="300"/> 
 
+### bin_to_bcd
+
+Simulation of Binary to Binary coded Decimal module:
+
+<img src="Images/bin_to_bcd_tb00_simulation.png" alt="Scheme" height="300"/> 
+
 ### TOP
 
 On the followig picture is a screenshot of simulation of top module. 
