@@ -31,7 +31,7 @@
 ## Code-description
 
 >Our objective is to measure time of output from the module, convert it to distance and display it on the 4-digit 7-segment display.
-###Driver for HC-SR04 module 
+### Driver for HC-SR04 module 
 Three inputs: 
 
 * 10 Mhz clock input 
@@ -49,7 +49,7 @@ This driver works as a Finite State Machine (FSM) with three states, described i
 
 During measurement process a variable s_time is filled with according value, which is then transformed into distance in a combinational section.
 
-## Measurement process
+#### Measurement process
 
 >measurement : process(clk_i)
 >	
@@ -108,7 +108,7 @@ If so, we add 3 to it and repeat the process. Hand-written process is on photo s
 
 <img src="Images/bin_to_bcd_paper" alt="Scheme" height="250"/> 
 
-## Binary to BCD process
+#### Binary to BCD process
 >p_bcd: process(distance)
 >        variable z: std_logic_vector(N+N_BCD-1 downto 0);
 >    begin
@@ -147,7 +147,7 @@ If so, we add 3 to it and repeat the process. Hand-written process is on photo s
 Purpose of this module is to instantiate all entities in order to create a functioning structure. In this code entities were instantiated without
 using components which is much cleaner and easier.
 
-## Entity instantiation example:
+#### Entity instantiation example:
 >		bin_to_bcd : entity work.bin_to_bcd(Behavioral)
 >			port map(
 >							distance => s_distance,
