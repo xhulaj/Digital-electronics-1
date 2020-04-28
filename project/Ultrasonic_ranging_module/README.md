@@ -106,7 +106,7 @@ We create unsigned binary number of length equal to 4 times 4 bits plus length o
 to part of four. Then we shift all bits leftwards by one and after each shift we check, whether number in correspondent part is equal or bigger than 5. 
 If so, we add 3 to it and repeat the process. Hand-written process is on photo shown below.
 
-<img src="Images/bin_to_bcd_paper" alt="Scheme" height="250"/> 
+<img src="Images/bin_to_bcd_paper.jpg" alt="Scheme" height="250"/> 
 
 #### Binary to BCD process
 >p_bcd: process(distance)
