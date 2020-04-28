@@ -1,0 +1,136 @@
+
+----------------------------------
+|  P a r t i t i o n    F a i l  |
+----------------------------------
+
+There are 355 outputs and 3 inputs not partitioned
+Output: s_dig_o<0> s_dig_o<1> s_dig_o<2> s_dig_o<3> s_dp_o s_seg_o<0> s_seg_o<1> s_seg_o<2> s_seg_o<3> 
+        s_seg_o<4> s_seg_o<5> s_seg_o<6> s_trigg HC_SR04_driver/Mmult_dist_mm_Mxor__index0005 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0007 HC_SR04_driver/Mmult_dist_mm_Mxor__index0009 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0010 HC_SR04_driver/Mmult_dist_mm_Mxor__index0011 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0018 HC_SR04_driver/Mmult_dist_mm_Mxor__index0019 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0020 HC_SR04_driver/Mmult_dist_mm_Mxor__index0021 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0022 HC_SR04_driver/Mmult_dist_mm_Mxor__index0023 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0024 HC_SR04_driver/Mmult_dist_mm_Mxor__index0025 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0026 HC_SR04_driver/Mmult_dist_mm_Mxor__index0027 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0028 HC_SR04_driver/Mmult_dist_mm_Mxor__index0033 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0034 HC_SR04_driver/Mmult_dist_mm_Mxor__index0035 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0036 HC_SR04_driver/Mmult_dist_mm_Mxor__index0037 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0038 HC_SR04_driver/Mmult_dist_mm_Mxor__index0039 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0040 HC_SR04_driver/Mmult_dist_mm_Mxor__index0041 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0042 HC_SR04_driver/Mmult_dist_mm_Mxor__index0050 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0051 HC_SR04_driver/Mmult_dist_mm_Mxor__index0052 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0053 HC_SR04_driver/Mmult_dist_mm_Mxor__index0054 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0055 HC_SR04_driver/Mmult_dist_mm_Mxor__index0056 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0057 HC_SR04_driver/Mmult_dist_mm_Mxor__index0063 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0064 HC_SR04_driver/Mmult_dist_mm_Mxor__index0065 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0066 HC_SR04_driver/Mmult_dist_mm_Mxor__index0067 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0068 HC_SR04_driver/Mmult_dist_mm_Mxor__index0069 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0070 HC_SR04_driver/Mmult_dist_mm_Mxor__index0071 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0072 HC_SR04_driver/Mmult_dist_mm_Mxor__index0073 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0078 HC_SR04_driver/Mmult_dist_mm_Mxor__index0080 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0081 HC_SR04_driver/Mmult_dist_mm_Mxor__index0082 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0083 HC_SR04_driver/Mmult_dist_mm_Mxor__index0084 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0085 HC_SR04_driver/Mmult_dist_mm_Mxor__index0086 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0092 HC_SR04_driver/Mmult_dist_mm_Mxor__index0093 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0095 HC_SR04_driver/Mmult_dist_mm_Mxor__index0096 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0097 HC_SR04_driver/Mmult_dist_mm_Mxor__index0098 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0099 HC_SR04_driver/Mmult_dist_mm_Mxor__index0100 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0101 HC_SR04_driver/Mmult_dist_mm_Mxor__index0106 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0107 HC_SR04_driver/Mmult_dist_mm_Mxor__index0108 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0109 HC_SR04_driver/Mmult_dist_mm_Mxor__index0110 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0111 HC_SR04_driver/Mmult_dist_mm_Mxor__index0112 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0113 HC_SR04_driver/Mmult_dist_mm_Mxor__index0114 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0115 HC_SR04_driver/Mmult_dist_mm_Mxor__index0116 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0117 HC_SR04_driver/Mmult_dist_mm_Mxor__index0124 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0125 HC_SR04_driver/Mmult_dist_mm_Mxor__index0126 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0127 HC_SR04_driver/Mmult_dist_mm_Mxor__index0128 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0129 HC_SR04_driver/Mmult_dist_mm_Mxor__index0130 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0131 HC_SR04_driver/Mmult_dist_mm_Mxor__index0132 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0133 HC_SR04_driver/Mmult_dist_mm_Mxor__index0140 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0141 HC_SR04_driver/Mmult_dist_mm_Mxor__index0142 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0143 HC_SR04_driver/Mmult_dist_mm_Mxor__index0144 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0145 HC_SR04_driver/Mmult_dist_mm_Mxor__index0146 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0147 HC_SR04_driver/Mmult_dist_mm_Mxor__index0148 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0152 HC_SR04_driver/Mmult_dist_mm_Mxor__index0154 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0155 HC_SR04_driver/Mmult_dist_mm_Mxor__index0156 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0157 HC_SR04_driver/Mmult_dist_mm_Mxor__index0158 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0159 HC_SR04_driver/Mmult_dist_mm_Mxor__index0160 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__index0161 HC_SR04_driver/Mmult_dist_mm_Mxor__index0162 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__n0000<13>__xor0000 
+        HC_SR04_driver/Mmult_dist_mm_Mxor__n0016<12>__xor0000 HC_SR04_driver/Mmult_dist_mm__or0010 
+        HC_SR04_driver/Mmult_dist_mm__or0016 HC_SR04_driver/Mmult_dist_mm__or0018 
+        HC_SR04_driver/Mmult_dist_mm__or0020 HC_SR04_driver/Mmult_dist_mm__or0023 
+        HC_SR04_driver/Mmult_dist_mm__or0027 HC_SR04_driver/Mmult_dist_mm__or0033 
+        HC_SR04_driver/Mmult_dist_mm__or0036 HC_SR04_driver/Mmult_dist_mm__or0041 
+        HC_SR04_driver/Mmult_dist_mm__or0044 HC_SR04_driver/Mmult_dist_mm__or0049 
+        HC_SR04_driver/Mmult_dist_mm__or0053 HC_SR04_driver/Mmult_dist_mm__or00533 
+        HC_SR04_driver/Mmult_dist_mm__or0055 HC_SR04_driver/Mmult_dist_mm__or0058 
+        HC_SR04_driver/Mmult_dist_mm__or0061 HC_SR04_driver/Mmult_dist_mm__or0066 
+        HC_SR04_driver/Mmult_dist_mm__or0072 HC_SR04_driver/Mmult_dist_mm__or0074 
+        HC_SR04_driver/Mmult_dist_mm__or0079 HC_SR04_driver/Mmult_dist_mm__or0080 
+        HC_SR04_driver/Mmult_dist_mm__or0083 HC_SR04_driver/Mmult_dist_mm__or0087 
+        HC_SR04_driver/Mmult_dist_mm__or0088 HC_SR04_driver/Mmult_dist_mm__or0092 
+        HC_SR04_driver/Mmult_dist_mm__or0094 HC_SR04_driver/Mmult_dist_mm__or0105 
+        HC_SR04_driver/Mmult_dist_mm__or0108 HC_SR04_driver/Mmult_dist_mm__or0111 
+        HC_SR04_driver/Mmult_dist_mm__or0114 HC_SR04_driver/Mmult_dist_mm__or0117 
+        HC_SR04_driver/Mmult_dist_mm__or0119 HC_SR04_driver/Mmult_dist_mm__or0122 
+        HC_SR04_driver/Mmult_dist_mm__or0128 HC_SR04_driver/Mmult_dist_mm__or0130 
+        HC_SR04_driver/Mmult_dist_mm__or01304 HC_SR04_driver/Mmult_dist_mm__or0131 
+        HC_SR04_driver/Mmult_dist_mm__or0134 HC_SR04_driver/Mmult_dist_mm__or0141 
+        HC_SR04_driver/Mmult_dist_mm__or0143 HC_SR04_driver/Mmult_dist_mm__or0146 
+        HC_SR04_driver/Mmult_dist_mm__or0149 HC_SR04_driver/Mmult_dist_mm__or0152 HC_SR04_driver/s_cnt<0> 
+        HC_SR04_driver/s_cnt<10> HC_SR04_driver/s_cnt<11> HC_SR04_driver/s_cnt<12> HC_SR04_driver/s_cnt<13> 
+        HC_SR04_driver/s_cnt<14> HC_SR04_driver/s_cnt<1> HC_SR04_driver/s_cnt<2> HC_SR04_driver/s_cnt<3> 
+        HC_SR04_driver/s_cnt<4> HC_SR04_driver/s_cnt<5> HC_SR04_driver/s_cnt<6> HC_SR04_driver/s_cnt<7> 
+        HC_SR04_driver/s_cnt<8> HC_SR04_driver/s_cnt<9> HC_SR04_driver/s_state_FSM_FFd1 
+        HC_SR04_driver/s_state_FSM_FFd2 HC_SR04_driver/s_time<10> HC_SR04_driver/s_time<11> 
+        HC_SR04_driver/s_time<12> HC_SR04_driver/s_time<1> HC_SR04_driver/s_time<2> HC_SR04_driver/s_time<3> 
+        HC_SR04_driver/s_time<4> HC_SR04_driver/s_time<5> HC_SR04_driver/s_time<6> HC_SR04_driver/s_time<7> 
+        HC_SR04_driver/s_time<8> HC_SR04_driver/s_time<9> N_PZ_1087 N_PZ_1088 N_PZ_1089 N_PZ_1090 N_PZ_1091 
+        N_PZ_1094 N_PZ_1095 N_PZ_1099 N_PZ_1100 N_PZ_1101 N_PZ_1102 N_PZ_1103 N_PZ_1104 N_PZ_1105 N_PZ_1106 
+        N_PZ_1111 N_PZ_1112 N_PZ_1113 N_PZ_1117 N_PZ_1230 N_PZ_1235 N_PZ_1268 N_PZ_208 N_PZ_214 N_PZ_217 
+        N_PZ_218 N_PZ_219 N_PZ_220 N_PZ_223 N_PZ_229 N_PZ_231 N_PZ_232 N_PZ_253 N_PZ_254 N_PZ_256 N_PZ_264 
+        N_PZ_265 N_PZ_266 N_PZ_267 N_PZ_270 N_PZ_272 N_PZ_276 N_PZ_312 N_PZ_321 N_PZ_324 N_PZ_325 N_PZ_335 
+        N_PZ_338 N_PZ_360 N_PZ_386 N_PZ_389 N_PZ_391 N_PZ_394 N_PZ_399 N_PZ_412 N_PZ_413 N_PZ_418 N_PZ_446 
+        N_PZ_461 N_PZ_529 N_PZ_564 N_PZ_565 N_PZ_566 N_PZ_567 N_PZ_568 N_PZ_569 N_PZ_572 N_PZ_573 N_PZ_574 
+        N_PZ_602 N_PZ_645 N_PZ_646 N_PZ_652 N_PZ_693 N_PZ_821 N_PZ_822 N_PZ_831 N_PZ_834 N_PZ_835 N_PZ_836 
+        N_PZ_845 N_PZ_889 N_PZ_892 N_PZ_895 N_PZ_923 N_PZ_927 N_PZ_929 N_PZ_931 N_PZ_932 N_PZ_935 N_PZ_943 
+        N_PZ_967 N_PZ_979 N_PZ_983 N_PZ_985 N_PZ_988 N_PZ_989 N_PZ_991 bin_to_bcd/z_14_mux0002 
+        bin_to_bcd/z_14_mux0003 bin_to_bcd/z_14_mux0004 bin_to_bcd/z_14_mux0005 bin_to_bcd/z_14_mux0006 
+        bin_to_bcd/z_14_mux0007 bin_to_bcd/z_14_mux0008 bin_to_bcd/z_14_mux0009 bin_to_bcd/z_16_mux0002 
+        bin_to_bcd/z_16_mux0003 bin_to_bcd/z_16_mux0005 bin_to_bcd/z_16_mux0006 bin_to_bcd/z_16_mux0008 
+        bin_to_bcd/z_16_mux0009 bin_to_bcd/z_17_mux0003 bin_to_bcd/z_17_mux0004 bin_to_bcd/z_17_mux0005 
+        bin_to_bcd/z_17_mux0006 bin_to_bcd/z_17_mux0007 bin_to_bcd/z_17_mux0008 bin_to_bcd/z_17_mux0009 
+        bin_to_bcd/z_18_mux0001 bin_to_bcd/z_18_mux0003 bin_to_bcd/z_18_mux0004 bin_to_bcd/z_18_mux0005 
+        bin_to_bcd/z_19_mux0001 bin_to_bcd/z_19_mux0003 bin_to_bcd/z_20_mux0001 bin_to_bcd/z_20_mux0005 
+        bin_to_bcd/z_21_mux0002 bin_to_bcd/z_21_mux0003 bin_to_bcd/z_21_mux0004 bin_to_bcd/z_21_mux0005 
+        bin_to_bcd/z_21_mux0006 bin_to_bcd/z_22_mux0002 bin_to_bcd/z_23_mux0002 bin_to_bcd/z_24_mux0002 
+        driver_7seg/CLOCK_EN/s_cnt<0> driver_7seg/CLOCK_EN/s_cnt<10> driver_7seg/CLOCK_EN/s_cnt<11> 
+        driver_7seg/CLOCK_EN/s_cnt<12> driver_7seg/CLOCK_EN/s_cnt<13> driver_7seg/CLOCK_EN/s_cnt<14> 
+        driver_7seg/CLOCK_EN/s_cnt<15> driver_7seg/CLOCK_EN/s_cnt<1> driver_7seg/CLOCK_EN/s_cnt<2> 
+        driver_7seg/CLOCK_EN/s_cnt<3> driver_7seg/CLOCK_EN/s_cnt<4> driver_7seg/CLOCK_EN/s_cnt<5> 
+        driver_7seg/CLOCK_EN/s_cnt<6> driver_7seg/CLOCK_EN/s_cnt<7> driver_7seg/CLOCK_EN/s_cnt<8> 
+        driver_7seg/CLOCK_EN/s_cnt<9> driver_7seg/s_cnt<0> driver_7seg/s_cnt<1> driver_7seg/s_en 
+        driver_7seg/s_hex<0> driver_7seg/s_hex<0>11 driver_7seg/s_hex<1> driver_7seg/s_hex<2> 
+        driver_7seg/s_hex<3> s_distance<2> s_distance<3> s_distance<5> s_distance<6> s_distance<8> 
+        s_distance<9>
+Input: echo s_clk_i s_srst_n_i
+0 Group(s)
+
+----------------- B l o c k 0 ------------------
+----------------- B l o c k 1 ------------------
+----------------- B l o c k 2 ------------------
+----------------- B l o c k 3 ------------------
+----------------- B l o c k 4 ------------------
+----------------- B l o c k 5 ------------------
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+----------------- B l o c k 9 ------------------
+----------------- B l o c k 10 ------------------
+----------------- B l o c k 11 ------------------
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------

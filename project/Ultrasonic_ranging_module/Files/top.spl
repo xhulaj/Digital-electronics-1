@@ -1,0 +1,10 @@
+[Inputs]
+s_clk_i
+s_srst_n_i
+echo
+[Outputs]
+s_trigg
+s_dp_o
+=s_seg_o[6:0]=
+=s_dig_o[3:0]=
+[BiDir]

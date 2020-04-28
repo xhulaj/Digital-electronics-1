@@ -1,0 +1,7 @@
+vhdl isim_temp "hex_to_7seg.vhd"
+vhdl isim_temp "clock_enable.vhd"
+vhdl isim_temp "HC_SR04_driver.vhd"
+vhdl isim_temp "driver_7seg.vhd"
+vhdl isim_temp "bin_to_bcd.vhd"
+vhdl isim_temp "top.vhd"
+vhdl isim_temp "top_tb00.vhd"

@@ -1,0 +1,10 @@
+vhdtdtfi -lib work hex_to_7seg.vhd -lib work clock_enable.vhd -lib work HC_SR04_driver.vhd -lib work driver_7seg.vhd -lib work bin_to_bcd.vhd -lib work top.vhd -prj Ultrasonic_range_detector -o top.spl -module top -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr top.spl {D:/Xilinx ISE projects/Ultrasonic_range_detector/top.sym} 
+vhdtdtfi -lib work hex_to_7seg.vhd -lib work clock_enable.vhd -lib work HC_SR04_driver.vhd -lib work driver_7seg.vhd -lib work bin_to_bcd.vhd -lib work top.vhd -prj Ultrasonic_range_detector -o top.spl -module top -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr top.spl {D:/Xilinx ISE projects/Ultrasonic_range_detector/top.sym} 
+vhdtdtfi -lib work hex_to_7seg.vhd -lib work clock_enable.vhd -lib work HC_SR04_driver.vhd -lib work driver_7seg.vhd -lib work bin_to_bcd.vhd -lib work top.vhd -prj Ultrasonic_range_detector -o top.spl -module top -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr top.spl {D:/Xilinx ISE projects/Ultrasonic_range_detector/top.sym} 
+xst -intstyle ise -ifn "D:/Xilinx ISE projects/Ultrasonic_range_detector/top.xst" -ofn "D:/Xilinx ISE projects/Ultrasonic_range_detector/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 "top.ngc" top.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 

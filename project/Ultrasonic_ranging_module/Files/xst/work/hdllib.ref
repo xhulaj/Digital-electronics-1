@@ -1,3 +1,13 @@
+EN hc_sr04_driver NULL "D:/Xilinx ISE projects/Ultrasonic_range_detector/HC_SR04_driver.vhd" sub00/vhpl05 1588080574
+EN hex_to_7seg NULL "D:/Xilinx ISE projects/Ultrasonic_range_detector/hex_to_7seg.vhd" sub00/vhpl03 1588080572
+AR bin_to_bcd behavioral "D:/Xilinx ISE projects/Ultrasonic_range_detector/bin_to_bcd.vhd" sub00/vhpl08 1588080577
+EN driver_7seg NULL "D:/Xilinx ISE projects/Ultrasonic_range_detector/driver_7seg.vhd" sub00/vhpl09 1588080578
 EN clock_enable_tb00 NULL "D:/Škola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd" sub00/vhpl02 1587044408
-AR clock_enable behavioral "D:/Škola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable.vhd" sub00/vhpl01 1587044407
-EN clock_enable NULL "D:/Škola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable.vhd" sub00/vhpl00 1587044406
+EN top NULL "D:/Xilinx ISE projects/Ultrasonic_range_detector/top.vhd" sub00/vhpl11 1588080580
+AR top rtl "D:/Xilinx ISE projects/Ultrasonic_range_detector/top.vhd" sub00/vhpl12 1588080581
+AR hc_sr04_driver behavioral "D:/Xilinx ISE projects/Ultrasonic_range_detector/HC_SR04_driver.vhd" sub00/vhpl06 1588080575
+EN bin_to_bcd NULL "D:/Xilinx ISE projects/Ultrasonic_range_detector/bin_to_bcd.vhd" sub00/vhpl07 1588080576
+AR driver_7seg behavioral "D:/Xilinx ISE projects/Ultrasonic_range_detector/driver_7seg.vhd" sub00/vhpl10 1588080579
+AR clock_enable behavioral "D:/Xilinx ISE projects/Ultrasonic_range_detector/clock_enable.vhd" sub00/vhpl01 1588080571
+AR hex_to_7seg behavioral "D:/Xilinx ISE projects/Ultrasonic_range_detector/hex_to_7seg.vhd" sub00/vhpl04 1588080573
+EN clock_enable NULL "D:/Xilinx ISE projects/Ultrasonic_range_detector/clock_enable.vhd" sub00/vhpl00 1588080570

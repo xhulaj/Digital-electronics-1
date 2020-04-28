@@ -1,0 +1,456 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.55 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.55 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/clock_enable is now defined in a different file.  It was defined in "D:/ kola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable.vhd", and is now defined in "D:/Xilinx ISE projects/Ultrasonic_range_detector/clock_enable.vhd".
+WARNING:HDLParsers:3607 - Unit work/clock_enable/Behavioral is now defined in a different file.  It was defined in "D:/ kola/Skripta/2. roèník/Letní/Digitální Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable.vhd", and is now defined in "D:/Xilinx ISE projects/Ultrasonic_range_detector/clock_enable.vhd".
+Compiling vhdl file "D:/Xilinx ISE projects/Ultrasonic_range_detector/clock_enable.vhd" in Library work.
+Entity <clock_enable> compiled.
+Entity <clock_enable> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Xilinx ISE projects/Ultrasonic_range_detector/hex_to_7seg.vhd" in Library work.
+Entity <hex_to_7seg> compiled.
+Entity <hex_to_7seg> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Xilinx ISE projects/Ultrasonic_range_detector/HC_SR04_driver.vhd" in Library work.
+Entity <HC_SR04_driver> compiled.
+Entity <HC_SR04_driver> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Xilinx ISE projects/Ultrasonic_range_detector/bin_to_bcd.vhd" in Library work.
+Entity <bin_to_bcd> compiled.
+Entity <bin_to_bcd> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Xilinx ISE projects/Ultrasonic_range_detector/driver_7seg.vhd" in Library work.
+Entity <driver_7seg> compiled.
+Entity <driver_7seg> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Xilinx ISE projects/Ultrasonic_range_detector/top.vhd" in Library work.
+Entity <top> compiled.
+Entity <top> (Architecture <RTL>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <HC_SR04_driver> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <bin_to_bcd> in library <work> (architecture <Behavioral>) with generics.
+	N = 14
+	N_BCD = 18
+
+Analyzing hierarchy for entity <driver_7seg> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <clock_enable> in library <work> (architecture <Behavioral>) with generics.
+	g_NPERIOD = "0000000000101000"
+
+Analyzing hierarchy for entity <hex_to_7seg> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <work> (Architecture <RTL>).
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <HC_SR04_driver> in library <work> (Architecture <Behavioral>).
+Entity <HC_SR04_driver> analyzed. Unit <HC_SR04_driver> generated.
+
+Analyzing generic Entity <bin_to_bcd> in library <work> (Architecture <Behavioral>).
+	N = 14
+	N_BCD = 18
+Entity <bin_to_bcd> analyzed. Unit <bin_to_bcd> generated.
+
+Analyzing Entity <driver_7seg> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "D:/Xilinx ISE projects/Ultrasonic_range_detector/driver_7seg.vhd" line 91: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <data0_i>, <dp_i>, <data1_i>, <data2_i>, <data3_i>
+Entity <driver_7seg> analyzed. Unit <driver_7seg> generated.
+
+Analyzing generic Entity <clock_enable> in library <work> (Architecture <Behavioral>).
+	g_NPERIOD = "0000000000101000"
+Entity <clock_enable> analyzed. Unit <clock_enable> generated.
+
+Analyzing Entity <hex_to_7seg> in library <work> (Architecture <Behavioral>).
+Entity <hex_to_7seg> analyzed. Unit <hex_to_7seg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <HC_SR04_driver>.
+    Related source file is "D:/Xilinx ISE projects/Ultrasonic_range_detector/HC_SR04_driver.vhd".
+WARNING:Xst:646 - Signal <s_time<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dist_mm<32>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dist_mm<17:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <s_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk_i                     (rising_edge)        |
+    | Reset              | srst_n_i                  (negative)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | trigg                                          |
+    | Power Up State     | trigg                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <trigg_o>.
+    Found 15x18-bit multiplier for signal <dist_mm>.
+    Found 15-bit register for signal <s_cnt>.
+    Found 15-bit adder for signal <s_cnt$share0000> created at line 60.
+    Found 15-bit comparator greater for signal <s_state$cmp_gt0000> created at line 84.
+    Found 15-bit comparator less for signal <s_state$cmp_lt0000> created at line 64.
+    Found 15-bit register for signal <s_time>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   2 Comparator(s).
+Unit <HC_SR04_driver> synthesized.
+
+
+Synthesizing Unit <bin_to_bcd>.
+    Related source file is "D:/Xilinx ISE projects/Ultrasonic_range_detector/bin_to_bcd.vhd".
+WARNING:Xst:1305 - Output <dec_point> is never assigned. Tied to value 1110.
+WARNING:Xst:646 - Signal <num_bcd<17:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit comparator greater for signal <z_17$cmp_gt0000> created at line 51.
+    Found 4-bit comparator greater for signal <z_17$cmp_gt0001> created at line 51.
+    Found 4-bit comparator greater for signal <z_17$cmp_gt0002> created at line 51.
+    Found 4-bit comparator greater for signal <z_17$cmp_gt0003> created at line 51.
+    Found 4-bit comparator greater for signal <z_17$cmp_gt0004> created at line 51.
+    Found 4-bit comparator greater for signal <z_17$cmp_gt0005> created at line 51.
+    Found 4-bit comparator greater for signal <z_17$cmp_gt0006> created at line 51.
+    Found 4-bit comparator greater for signal <z_17$cmp_gt0007> created at line 51.
+    Found 4-bit comparator greater for signal <z_17$cmp_gt0008> created at line 51.
+    Found 4-bit comparator greater for signal <z_17$cmp_gt0009> created at line 51.
+    Found 4-bit comparator greater for signal <z_17$cmp_gt0010> created at line 51.
+    Found 4-bit adder for signal <z_17_14$add0000> created at line 52.
+    Found 4-bit adder for signal <z_17_14$add0001> created at line 52.
+    Found 4-bit adder for signal <z_17_14$add0002> created at line 52.
+    Found 4-bit adder for signal <z_17_14$add0003> created at line 52.
+    Found 4-bit adder for signal <z_17_14$add0004> created at line 52.
+    Found 4-bit adder for signal <z_17_14$add0005> created at line 52.
+    Found 4-bit adder for signal <z_17_14$add0006> created at line 52.
+    Found 4-bit adder for signal <z_17_14$add0007> created at line 52.
+    Found 4-bit adder for signal <z_17_14$add0008> created at line 52.
+    Found 4-bit adder for signal <z_17_14$add0009> created at line 52.
+    Found 4-bit adder for signal <z_17_14$add0010> created at line 52.
+    Found 4-bit comparator greater for signal <z_19$cmp_gt0000> created at line 55.
+    Found 4-bit comparator greater for signal <z_19$cmp_gt0001> created at line 55.
+    Found 4-bit comparator greater for signal <z_19$cmp_gt0002> created at line 55.
+    Found 4-bit comparator greater for signal <z_19$cmp_gt0003> created at line 55.
+    Found 4-bit comparator greater for signal <z_19$cmp_gt0004> created at line 55.
+    Found 4-bit comparator greater for signal <z_19$cmp_gt0005> created at line 55.
+    Found 4-bit comparator greater for signal <z_19$cmp_gt0006> created at line 55.
+    Found 4-bit comparator greater for signal <z_19$cmp_gt0007> created at line 55.
+    Found 4-bit adder for signal <z_21_18$add0000> created at line 56.
+    Found 4-bit adder for signal <z_21_18$add0001> created at line 56.
+    Found 4-bit adder for signal <z_21_18$add0002> created at line 56.
+    Found 4-bit adder for signal <z_21_18$add0003> created at line 56.
+    Found 4-bit adder for signal <z_21_18$add0004> created at line 56.
+    Found 4-bit adder for signal <z_21_18$add0005> created at line 56.
+    Found 4-bit adder for signal <z_21_18$add0006> created at line 56.
+    Found 4-bit adder for signal <z_21_18$add0007> created at line 56.
+    Found 4-bit comparator greater for signal <z_25$cmp_gt0000> created at line 59.
+    Found 4-bit comparator greater for signal <z_25$cmp_gt0001> created at line 59.
+    Found 4-bit comparator greater for signal <z_25$cmp_gt0002> created at line 59.
+    Found 4-bit comparator greater for signal <z_25$cmp_gt0003> created at line 59.
+    Found 4-bit comparator greater for signal <z_25$cmp_gt0004> created at line 59.
+    Found 4-bit adder for signal <z_25_22$add0000> created at line 60.
+    Found 4-bit adder for signal <z_25_22$add0001> created at line 60.
+    Found 4-bit adder for signal <z_25_22$add0002> created at line 60.
+    Found 4-bit adder for signal <z_25_22$add0003> created at line 60.
+    Found 4-bit adder for signal <z_25_22$add0004> created at line 60.
+    Found 4-bit comparator greater for signal <z_26$cmp_gt0000> created at line 63.
+    Found 4-bit comparator greater for signal <z_26$cmp_gt0001> created at line 63.
+    Found 3-bit adder for signal <z_28_26$add0000> created at line 64.
+    Found 3-bit adder for signal <z_28_26$add0001> created at line 64.
+    Summary:
+	inferred  26 Adder/Subtractor(s).
+	inferred  26 Comparator(s).
+Unit <bin_to_bcd> synthesized.
+
+
+Synthesizing Unit <clock_enable>.
+    Related source file is "D:/Xilinx ISE projects/Ultrasonic_range_detector/clock_enable.vhd".
+    Found 1-bit register for signal <clock_enable_o>.
+    Found 16-bit comparator less for signal <clock_enable_o$cmp_lt0000> created at line 49.
+    Found 16-bit up counter for signal <s_cnt>.
+    Found 16-bit comparator greatequal for signal <s_cnt$cmp_ge0000> created at line 49.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 Comparator(s).
+Unit <clock_enable> synthesized.
+
+
+Synthesizing Unit <hex_to_7seg>.
+    Related source file is "D:/Xilinx ISE projects/Ultrasonic_range_detector/hex_to_7seg.vhd".
+    Found 16x7-bit ROM for signal <seg_o>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <hex_to_7seg> synthesized.
+
+
+Synthesizing Unit <driver_7seg>.
+    Related source file is "D:/Xilinx ISE projects/Ultrasonic_range_detector/driver_7seg.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <dp_o>.
+    Found 1-of-4 decoder for signal <dig_o>.
+    Found 2-bit up counter for signal <s_cnt>.
+    Found 4-bit 4-to-1 multiplexer for signal <s_hex>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Decoder(s).
+Unit <driver_7seg> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "D:/Xilinx ISE projects/Ultrasonic_range_detector/top.vhd".
+Unit <top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 15x18-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 27
+ 15-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 24
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 15-bit register                                       : 2
+# Comparators                                          : 30
+ 15-bit comparator greater                             : 1
+ 15-bit comparator less                                : 1
+ 16-bit comparator greatequal                          : 1
+ 16-bit comparator less                                : 1
+ 4-bit comparator greater                              : 26
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <HC_SR04_driver/s_state/FSM> on signal <s_state[1:2]> with johnson encoding.
+---------------------
+ State   | Encoding
+---------------------
+ trigg   | 00
+ pending | 01
+ echo    | 11
+---------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 15x18-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 27
+ 15-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 24
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <s_time_0> of sequential type is unconnected in block <HC_SR04_driver>.
+
+Optimizing unit <top> ...
+
+Optimizing unit <hex_to_7seg> ...
+
+Optimizing unit <bin_to_bcd> ...
+
+Optimizing unit <HC_SR04_driver> ...
+  implementation constraint: INIT=r	 : trigg_o
+  implementation constraint: INIT=r	 : s_state_FSM_FFd1
+  implementation constraint: INIT=r	 : s_state_FSM_FFd2
+
+Optimizing unit <clock_enable> ...
+  implementation constraint: INIT=r	 : s_cnt_15
+  implementation constraint: INIT=r	 : s_cnt_0
+  implementation constraint: INIT=r	 : s_cnt_1
+  implementation constraint: INIT=r	 : s_cnt_2
+  implementation constraint: INIT=r	 : s_cnt_3
+  implementation constraint: INIT=r	 : s_cnt_4
+  implementation constraint: INIT=r	 : s_cnt_5
+  implementation constraint: INIT=r	 : s_cnt_6
+  implementation constraint: INIT=r	 : s_cnt_7
+  implementation constraint: INIT=r	 : s_cnt_8
+  implementation constraint: INIT=r	 : s_cnt_9
+  implementation constraint: INIT=r	 : s_cnt_10
+  implementation constraint: INIT=r	 : s_cnt_11
+  implementation constraint: INIT=r	 : s_cnt_12
+  implementation constraint: INIT=r	 : s_cnt_13
+  implementation constraint: INIT=r	 : s_cnt_14
+
+Optimizing unit <driver_7seg> ...
+  implementation constraint: INIT=r	 : s_cnt_0
+  implementation constraint: INIT=r	 : s_cnt_1
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 16
+
+Cell Usage :
+# BELS                             : 2174
+#      AND2                        : 796
+#      AND3                        : 10
+#      AND4                        : 6
+#      AND8                        : 4
+#      GND                         : 2
+#      INV                         : 413
+#      OR2                         : 532
+#      OR3                         : 10
+#      OR8                         : 1
+#      XOR2                        : 400
+# FlipFlops/Latches                : 51
+#      FD                          : 34
+#      FDCE                        : 17
+# IO Buffers                       : 16
+#      IBUF                        : 3
+#      OBUF                        : 13
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.90 secs
+ 
+--> 
+
+Total memory usage is 4553104 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

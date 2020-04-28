@@ -5,16 +5,35 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLParsers" num="1015" delta="new" >&quot;<arg fmt="%s" index="1">D:/ﾊkola/Skripta/2. ro￨n￭k/Letn￭/Digit￡ln￭ Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd</arg>&quot; Line <arg fmt="%d" index="2">75</arg>. Wait for statement unsupported.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/clock_enable</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/ﾊkola/Skripta/2. ro￨n￭k/Letn￭/Digit￡ln￭ Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Xilinx ISE projects/Ultrasonic_range_detector/clock_enable.vhd</arg>&quot;.
 </msg>
 
-<msg type="error" file="HDLParsers" num="1015" delta="new" >&quot;<arg fmt="%s" index="1">D:/ﾊkola/Skripta/2. ro￨n￭k/Letn￭/Digit￡ln￭ Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd</arg>&quot; Line <arg fmt="%d" index="2">77</arg>. Wait for statement unsupported.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/clock_enable/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/ﾊkola/Skripta/2. ro￨n￭k/Letn￭/Digit￡ln￭ Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Xilinx ISE projects/Ultrasonic_range_detector/clock_enable.vhd</arg>&quot;.
 </msg>
 
-<msg type="error" file="HDLParsers" num="1015" delta="new" >&quot;<arg fmt="%s" index="1">D:/ﾊkola/Skripta/2. ro￨n￭k/Letn￭/Digit￡ln￭ Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd</arg>&quot; Line <arg fmt="%d" index="2">85</arg>. Wait for statement unsupported.
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">D:/Xilinx ISE projects/Ultrasonic_range_detector/driver_7seg.vhd</arg>&quot; line <arg fmt="%d" index="2">91</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;data0_i&gt;, &lt;dp_i&gt;, &lt;data1_i&gt;, &lt;data2_i&gt;, &lt;data3_i&gt;</arg>
 </msg>
 
-<msg type="error" file="HDLParsers" num="1015" delta="new" >&quot;<arg fmt="%s" index="1">D:/ﾊkola/Skripta/2. ro￨n￭k/Letn￭/Digit￡ln￭ Elektronika BPC-DE1/Projekt/Ultrasonic_range_detector (copy)/clock_enable_tb00.vhd</arg>&quot; Line <arg fmt="%d" index="2">87</arg>. Wait for statement unsupported.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">s_time&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">dist_mm&lt;32&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">dist_mm&lt;17:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">dec_point</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">1110</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">num_bcd&lt;17:16&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">s_time_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">HC_SR04_driver</arg>&gt;.
 </msg>
 
 </messages>

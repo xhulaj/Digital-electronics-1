@@ -1,0 +1,6 @@
+vhdl work "D:\Xilinx ISE projects\Ultrasonic_range_detector\hex_to_7seg.vhd"
+vhdl work "D:\Xilinx ISE projects\Ultrasonic_range_detector\clock_enable.vhd"
+vhdl work "D:\Xilinx ISE projects\Ultrasonic_range_detector\HC_SR04_driver.vhd"
+vhdl work "D:\Xilinx ISE projects\Ultrasonic_range_detector\driver_7seg.vhd"
+vhdl work "D:\Xilinx ISE projects\Ultrasonic_range_detector\bin_to_bcd.vhd"
+vhdl work "D:\Xilinx ISE projects\Ultrasonic_range_detector\top.vhd"
