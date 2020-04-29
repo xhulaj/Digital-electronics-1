@@ -42,9 +42,7 @@ architecture RTL of top is
 
 	signal s_distance : std_logic_vector(14-1 downto 0);
 	signal s_data0, s_data1, s_data2, s_data3, s_dec_point : std_logic_vector(4-1 downto 0);
-	--signal s_seg_o : std_logic_vector(7-1 downto 0);
-	--signal s_dp_o  : std_logic;
-	--signal s_dig_o : std_logic_vector(4-1 downto 0);
+
 	
 begin
 	

@@ -24,8 +24,8 @@ use ieee.std_logic_unsigned.all;
 
 entity bin_to_bcd is
 	 Generic (
-				N : integer := 14;
-				N_BCD : integer:= 18
+					N : integer := 14;
+					N_BCD : integer:= 18
 				);
     Port ( 
 			   distance : in  std_logic_vector (N-1 downto 0);
@@ -37,34 +37,33 @@ end bin_to_bcd;
 architecture Behavioral of bin_to_bcd is
 
 		signal num_bcd: std_logic_vector (N_BCD-1 downto 0):= (others => '0');
+		constant four : std_logic_vector (3 downto 0) := "0100";
 begin
+
 p_bcd: process(distance)
         variable z: std_logic_vector(N+N_BCD-1 downto 0);
     begin
-        -- Initialization of data to z
-        z := (others => '0');
-        -- First three left shifts
-        z(N+2 downto 3) := distance;
-        -- Loop for the remaining shifts
-        for i in 0 to N-4 loop
+        z := (others => '0'); -- Initialization of data to z
+		  z(N+2 downto 3) := distance; -- First three left shifts
+        for i in 0 to N-4 loop      -- Loop for the remaining shifts
             
-            if z(N+3 downto N) > "0100" then
-                z(N+3 downto N) := z(N+3 downto N) + 3;-- jednotky (4 bity)
+            if z(N+3 downto N) > four then
+                z(N+3 downto N) := z(N+3 downto N) + 3;-- units
             end if;
             
-            if z(N+7 downto N+4) > "0100" then
-                z(N+7 downto N+4) := z(N+7 downto N+4) + 3; -- desitky(4 bity)
+            if z(N+7 downto N+4) > four then
+                z(N+7 downto N+4) := z(N+7 downto N+4) + 3; -- tens
             end if;
             
-            if z(N+11 downto N+8) > "0100" then
-                z(N+11 downto N+8) := z(N+11 downto N+8) +3; -- stovky (4 bits)
+            if z(N+11 downto N+8) > four then
+                z(N+11 downto N+8) := z(N+11 downto N+8) +3; -- hundreds
             end if;
             
-            if z(N+14 downto N+12) > "0100" then
-                z(N+14 downto N+12) := z(N+14 downto N+12) + 3; -- tisice (4 bits)
+            if z(N+14 downto N+12) > four then
+                z(N+14 downto N+12) := z(N+14 downto N+12) + 3; -- thousands
             end if;
             
-            z(N+N_BCD-1 downto 1) := z(N+N_BCD-2 downto 0); -- posun do leva
+            z(N+N_BCD-1 downto 1) := z(N+N_BCD-2 downto 0); -- shift leftwards
         end loop;
         
         num_bcd <= z(N+N_BCD-1 downto N);      
