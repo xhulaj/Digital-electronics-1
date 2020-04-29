@@ -23,7 +23,7 @@ use ieee.std_logic_unsigned.all;
 
 entity clock_enable is
 	generic (
-		g_NPERIOD : std_logic_vector(16-1 downto 0) := x"0100"
+		g_NPERIOD : std_logic_vector(16-1 downto 0) := x"0064"
 	);
 	Port ( clk_i : in  STD_LOGIC; -- 1Mhz
           srst_n_i : in  STD_LOGIC; 
