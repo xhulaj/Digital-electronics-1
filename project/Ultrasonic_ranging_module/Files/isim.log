@@ -1,5 +1,5 @@
 ISim log file
-Running: D:\Xilinx ISE projects\Ultrasonic_range_detector\top_tb00_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Xilinx ISE projects/Ultrasonic_range_detector/top_tb00_isim_beh.wdb 
+Running: D:\School_repositories\Digital-electronics-1\project\Ultrasonic_ranging_module\Files\HC_SR04_driver_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/School_repositories/Digital-electronics-1/project/Ultrasonic_ranging_module/Files/HC_SR04_driver_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -8,4 +8,4 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 100 ms
+# run 10 ms

@@ -1,0 +1,5 @@
+vhdl isim_temp "stopwatch.vhd"
+vhdl isim_temp "hex_to_7seg.vhd"
+vhdl isim_temp "clock_enable.vhd"
+vhdl isim_temp "top.vhd"
+vhdl isim_temp "top_tb00.vhd"

@@ -1,0 +1,4 @@
+work	"clock_enable.vhd"
+work	"hex_to_7seg.vhd"
+work	"stopwatch.vhd"
+work	"top.vhd"

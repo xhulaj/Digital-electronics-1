@@ -8,5 +8,17 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/School_repositories/Digital-electronics-1/labs/03-segment/hex_to_segment_hp.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/School_repositories/Digital-electronics-1/labs/04-adder/binary_adder/full_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/School_repositories/Digital-electronics-1/labs/04-adder/binary_adder/half_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/School_repositories/Digital-electronics-1/labs/04-adder/binary_adder/top.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 

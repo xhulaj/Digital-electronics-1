@@ -22,6 +22,10 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Ultrasonic_range_detector.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="HC_SR04_driver_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="HC_SR04_driver_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="HC_SR04_driver_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="HC_SR04_driver_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="HC_SR04_driver_tb00_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="HC_SR04_driver_tb00_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="HC_SR04_driver_tb01_beh.prj"/>
@@ -65,9 +69,7 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="top_ngdbuild.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="top_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="top_summary.html"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="top_tb00_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="top_tb00_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="top_tb00_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="top_tb00_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="top_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="top_xst.xrpt"/>
@@ -82,13 +84,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1588083085" xil_pn:in_ck="-3383980832423734593" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1588083085">
+    <transform xil_pn:end_ts="1595002015" xil_pn:in_ck="-3383980832423734593" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1595002014">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="HC_SR04_driver.vhd"/>
       <outfile xil_pn:name="HC_SR04_driver_tb00.vhd"/>
       <outfile xil_pn:name="HC_SR04_tb01.vhd"/>
@@ -100,18 +98,13 @@
       <outfile xil_pn:name="top.vhd"/>
       <outfile xil_pn:name="top_tb00.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1588081350" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1322222736713781113" xil_pn:start_ts="1588081350">
+    <transform xil_pn:end_ts="1595002020" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1348506816103949052" xil_pn:start_ts="1595002020">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1588083085" xil_pn:in_ck="-3383980832423734593" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1588083085">
+    <transform xil_pn:end_ts="1595002020" xil_pn:in_ck="-3383980832423734593" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1595002020">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="HC_SR04_driver.vhd"/>
       <outfile xil_pn:name="HC_SR04_driver_tb00.vhd"/>
       <outfile xil_pn:name="HC_SR04_tb01.vhd"/>
@@ -123,32 +116,26 @@
       <outfile xil_pn:name="top.vhd"/>
       <outfile xil_pn:name="top_tb00.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1588083090" xil_pn:in_ck="-3383980832423734593" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2691367488989956071" xil_pn:start_ts="1588083085">
+    <transform xil_pn:end_ts="1595002026" xil_pn:in_ck="-3383980832423734593" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1748938834779294350" xil_pn:start_ts="1595002020">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="HC_SR04_driver_beh.prj"/>
+      <outfile xil_pn:name="HC_SR04_driver_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="top_tb00_beh.prj"/>
-      <outfile xil_pn:name="top_tb00_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1588083090" xil_pn:in_ck="-8508123871812468549" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3706685249169972102" xil_pn:start_ts="1588083090">
+    <transform xil_pn:end_ts="1595002026" xil_pn:in_ck="-3076706887259529912" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4245136831135007551" xil_pn:start_ts="1595002026">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="HC_SR04_driver_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="top_tb00_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1587044400" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1587044400">
       <status xil_pn:value="SuccessfullyRun"/>
